@@ -6,6 +6,7 @@
     "dev": "vite",
     "lint": "biome format ./src",
     "lint:fix": "biome format --write ./src",
+    "check:ci": "biome check ./src",
     "test": "vitest",
     "types:check": "tsc --noEmit"
   },
