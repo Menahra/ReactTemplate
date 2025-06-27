@@ -1,12 +1,10 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "recommended": false,
       "a11y": {
         "noAccessKey": "error",
         "noAriaHiddenOnFocusable": "error",
@@ -42,17 +40,21 @@
         "useValidLang": "error"
       },
       "complexity": {
+        "noAdjacentSpacesInRegex": "error",
+        "noArguments": "error",
         "noBannedTypes": "error",
+        "noCommaOperator": "error",
         "noEmptyTypeParameters": "error",
         "noExcessiveCognitiveComplexity": "warn",
         "noExcessiveNestedTestSuites": "error",
         "noExtraBooleanCast": "error",
+        "noFlatMapIdentity": "error",
         "noForEach": "error",
-        "noMultipleSpacesInRegularExpressionLiterals": "error",
         "noStaticOnlyClass": "error",
         "noThisInStatic": "error",
         "noUselessCatch": "error",
         "noUselessConstructor": "error",
+        "noUselessContinue": "error",
         "noUselessEmptyExport": "error",
         "noUselessLabel": "error",
         "noUselessLoneBlockStatements": "error",
@@ -64,15 +66,16 @@
         "noUselessTypeConstraint": "error",
         "noUselessUndefinedInitialization": "error",
         "noVoid": "error",
-        "noWith": "error",
         "useArrowFunction": "error",
         "useDateNow": "error",
         "useFlatMap": "error",
         "useLiteralKeys": "error",
+        "useNumericLiterals": "error",
         "useOptionalChain": "error",
         "useRegexLiterals": "error",
         "useSimpleNumberKeys": "error",
-        "useSimplifiedLogicExpression": "error"
+        "useSimplifiedLogicExpression": "error",
+        "useWhile": "error"
       },
       "correctness": {
         "noConstantCondition": "error",
@@ -81,7 +84,6 @@
         "noConstructorReturn": "error",
         "noEmptyCharacterClassInRegex": "error",
         "noEmptyPattern": "error",
-        "noFlatMapIdentity": "error",
         "noGlobalObjectCalls": "error",
         "noInnerDeclarations": "error",
         "noInvalidBuiltinInstantiation": "error",
@@ -104,7 +106,6 @@
         "noUnknownProperty": "error",
         "noUnknownUnit": "error",
         "noUnmatchableAnbSelector": "error",
-        "noUnnecessaryContinue": "error",
         "noUnreachable": "error",
         "noUnreachableSuper": "error",
         "noUnsafeFinally": "error",
@@ -115,16 +116,17 @@
         "noUnusedPrivateClassMembers": "error",
         "noUnusedVariables": "error",
         "noVoidTypeReturn": "error",
-        "useArrayLiterals": "error",
         "useImportExtensions": "error",
         "useIsNan": "error",
         "useValidForDirection": "error",
+        "useValidTypeof": "error",
         "useYield": "error"
       },
       "performance": {
         "noAccumulatingSpread": "error",
         "noBarrelFile": "error",
         "noDelete": "error",
+        "noNamespaceImport": "error",
         "noReExportAll": "error",
         "useTopLevelRegex": "warn"
       },
@@ -132,13 +134,10 @@
         "noGlobalEval": "error"
       },
       "style": {
-        "noArguments": "error",
-        "noCommaOperator": "error",
         "noDefaultExport": "error",
         "noDoneCallback": "error",
         "noInferrableTypes": "error",
         "noNamespace": "error",
-        "noNamespaceImport": "error",
         "noNegationElse": "error",
         "noNonNullAssertion": "error",
         "noParameterAssign": "error",
@@ -147,8 +146,8 @@
         "noShoutyConstants": "error",
         "noUnusedTemplateLiteral": "error",
         "noUselessElse": "error",
-        "noVar": "error",
         "noYodaExpression": "error",
+        "useArrayLiterals": "error",
         "useAsConstAssertion": "error",
         "useBlockStatements": "error",
         "useCollapsedElseIf": "error",
@@ -157,6 +156,7 @@
         "useConst": "error",
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
+        "useEnumInitializers": "error",
         "useExplicitLengthCheck": "error",
         "useExponentiationOperator": "error",
         "useExportType": "error",
@@ -165,16 +165,13 @@
         "useNamingConvention": "error",
         "useNodejsImportProtocol": "error",
         "useNumberNamespace": "error",
-        "useNumericLiterals": "error",
         "useSelfClosingElements": "error",
-        "useShorthandArrayType": "error",
         "useShorthandAssign": "error",
         "useShorthandFunctionType": "error",
         "useSingleVarDeclarator": "error",
         "useTemplate": "error",
         "useThrowNewError": "error",
-        "useThrowOnlyError": "error",
-        "useWhile": "error"
+        "useThrowOnlyError": "error"
       },
       "suspicious": {
         "noApproximativeNumericConstant": "error",
@@ -188,10 +185,7 @@
         "noConsole": {
           "level": "error",
           "options": {
-            "allow": [
-              "error",
-              "warn"
-            ]
+            "allow": ["error", "warn"]
           }
         },
         "noConstEnum": "error",
@@ -238,26 +232,27 @@
         "noThenProperty": "error",
         "noUnsafeDeclarationMerging": "error",
         "noUnsafeNegation": "error",
+        "noVar": "error",
+        "noWith": "error",
         "useAwait": "error",
         "useDefaultSwitchClauseLast": "error",
         "useErrorMessage": "error",
         "useGetterReturn": "error",
         "useIsArray": "error",
         "useNamespaceKeyword": "error",
-        "useNumberToFixedDigitsArgument": "error",
-        "useValidTypeof": "error"
+        "useNumberToFixedDigitsArgument": "error"
       }
     }
   },
   "formatter": {
+    "attributePosition": "auto",
     "enabled": true,
     "formatWithErrors": false,
-    "ignore": [],
-    "attributePosition": "auto",
+    "includes": ["**"],
     "indentStyle": "tab",
     "indentWidth": 2,
-    "lineWidth": 80,
-    "lineEnding": "lf"
+    "lineEnding": "lf",
+    "lineWidth": 80
   },
   "javascript": {
     "formatter": {
