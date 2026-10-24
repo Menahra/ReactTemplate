@@ -4,7 +4,6 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": false,
       "a11y": {
         "noAccessKey": "error",
         "noAriaHiddenOnFocusable": "error",
@@ -143,6 +142,7 @@
         "noReExportAll": "error",
         "useTopLevelRegex": "warn"
       },
+      "preset": "recommended",
       "security": {
         "noBlankTarget": "error",
         "noDangerouslySetInnerHtml": "error",
