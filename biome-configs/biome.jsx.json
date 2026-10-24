@@ -1,0 +1,76 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.2/schema.json",
+  "linter": {
+    "rules": {
+      "a11y": {
+        "noAccessKey": "error",
+        "noAmbiguousAnchorText": "error",
+        "noAriaHiddenOnFocusable": "error",
+        "noAriaUnsupportedElements": "error",
+        "noAutofocus": "error",
+        "noDistractingElements": "error",
+        "noHeaderScope": "error",
+        "noInteractiveElementToNoninteractiveRole": "error",
+        "noLabelWithoutControl": "error",
+        "noNoninteractiveElementInteractions": "error",
+        "noNoninteractiveElementToInteractiveRole": "error",
+        "noNoninteractiveTabindex": "error",
+        "noPositiveTabindex": "error",
+        "noRedundantAlt": "error",
+        "noRedundantRoles": "error",
+        "noStaticElementInteractions": "error",
+        "noSvgWithoutTitle": "error",
+        "useAltText": "error",
+        "useAnchorContent": "error",
+        "useAriaActivedescendantWithTabindex": "error",
+        "useAriaPropsForRole": "error",
+        "useAriaPropsSupportedByRole": "error",
+        "useButtonType": "error",
+        "useFocusableInteractive": "error",
+        "useGenericFontNames": "error",
+        "useHeadingContent": "error",
+        "useHtmlLang": "error",
+        "useIframeTitle": "error",
+        "useKeyWithClickEvents": "error",
+        "useKeyWithMouseEvents": "error",
+        "useMediaCaption": "error",
+        "useSemanticElements": "error",
+        "useValidAnchor": "error",
+        "useValidAriaProps": "error",
+        "useValidAriaRole": "error",
+        "useValidAriaValues": "error",
+        "useValidAutocomplete": "error",
+        "useValidLang": "error"
+      },
+      "complexity": {
+        "noUselessFragments": "error"
+      },
+      "correctness": {
+        "noChildrenProp": "error",
+        "noNestedComponentDefinitions": "error",
+        "noRestrictedElements": "error",
+        "noVoidElementsWithChildren": "error",
+        "useImageSize": "error",
+        "useUniqueElementIds": "error"
+      },
+      "security": {
+        "noBlankTarget": "error",
+        "noDangerouslySetInnerHtml": "error",
+        "noDangerouslySetInnerHtmlWithChildren": "error"
+      },
+      "style": {
+        "noImplicitBoolean": "error",
+        "noJsxLiterals": "error",
+        "useComponentExportOnlyModules": "error",
+        "useConsistentCurlyBraces": "error",
+        "useFragmentSyntax": "error"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "error",
+        "noCommentText": "error",
+        "noDuplicateJsxProps": "error",
+        "noSuspiciousSemicolonInJsx": "error"
+      }
+    }
+  }
+}

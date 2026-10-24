@@ -1,0 +1,28 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.6.2/schema.json",
+  "linter": {
+    "domains": {
+      "react": "recommended"
+    },
+    "rules": {
+      "correctness": {
+        "noComponentHookFactories": "error",
+        "noJsxNamespace": "error",
+        "noReactPropAssignments": "error",
+        "noRenderReturnValue": "error",
+        "useExhaustiveDependencies": "error",
+        "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "error",
+        "useReactAsyncServerFunction": "error"
+      },
+      "style": {
+        "useReactFunctionComponents": "error"
+      },
+      "suspicious": {
+        "noJsxLeakedDollar": "error",
+        "noReactForwardRef": "error",
+        "noReactStringRefs": "error"
+      }
+    }
+  }
+}
