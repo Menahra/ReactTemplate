@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: lts/Hydrogen
+          node-version: lts/*
 
       - name: "🔧 install according to package-lock"
         run: npm ci
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         id: restore-build
         with:
           path: ./*
@@ -33,14 +33,14 @@ jobs:
 
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: lts/Hydrogen
+          node-version: lts/*
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         id: restore-build
         with:
           path: ./*
@@ -56,14 +56,14 @@ jobs:
 
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: lts/Hydrogen
+          node-version: lts/*
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         id: restore-build
         with:
           path: ./*
@@ -79,14 +79,14 @@ jobs:
 
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: lts/Hydrogen
+          node-version: lts/*
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         id: restore-build
         with:
           path: ./*
@@ -102,14 +102,14 @@ jobs:
 
     steps:
       - name: "☁️ checkout repository"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: "🔧 setup node"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: lts/Hydrogen
+          node-version: lts/*
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         id: restore-build
         with:
           path: ./*
