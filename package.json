@@ -4,8 +4,9 @@
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
-    "lint": "biome format ./src",
-    "lint:fix": "biome format --write ./src",
+    "lint": "biome lint ./src",
+    "lint:fix": "biome lint --write ./src",
+    "format": "biome format --write ./src",
     "check:ci": "biome check ./src",
     "test": "vitest",
     "types:check": "tsc --noEmit"
